@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 public class EscapeRoom2Controller {
     private RoomService roomService;
 
-    public EscapeRoom2Controller(@Qualifier("room1Service") RoomService roomService) {
+    public EscapeRoom2Controller(RoomService roomService) {
         this.roomService = roomService;
     }
 

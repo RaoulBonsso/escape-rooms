@@ -2,13 +2,15 @@ package org.sebsy.demo.escaperooms.controller;
 
 import org.sebsy.demo.escaperooms.bll.TreasureService;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
-@Controller
+@Component
 public class TreasureRoomController {
     private TreasureService tresorService;
 
-    public TreasureRoomController(@Qualifier("treasure2Service") TreasureService tresorService) {
+    public TreasureRoomController(TreasureService tresorService) {
         this.tresorService = tresorService;
     }
 
