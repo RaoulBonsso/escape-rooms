@@ -1,5 +1,8 @@
 package org.sebsy.demo.escaperooms.bll;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class Treasure2Service implements TreasureService {
 
     @Override
